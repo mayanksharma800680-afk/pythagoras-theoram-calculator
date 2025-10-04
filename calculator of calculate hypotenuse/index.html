@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pythagoras theorem calculator</title>
+</head>
+<body>
+    <script>
+        
+        // please open inspect to get answer. 
+        // step - 1 : right click on mouse.
+        // step - 1 : click inspect.
+        // step - 1 : click console.
+
+
+
+let choice = prompt("enter 'h' to calculate Hypotenuse, 's' to calculate side ");
+
+
+if(choice==='h'){
+    let side1 = Number(prompt("enter the side 1"));
+    let side2 = Number(prompt("enter the side 2"));
+    let h = Math.sqrt(side1**2+side2**2);
+    // console.log("hypotenuse is:", h);
+    
+    let x = (side1**2+side2**2);
+    
+console.log("here is the solution, ");
+    console.log("h^2 = side-1^2 +side-2^2 ");
+    console.log(" h^2 = ",side1,("^2"), "+", side2,("^2"));
+    console.log("h^2 =", side1**2 , "+", side2**2 );
+    console.log("h^2 =" ,x);
+    console.log("h =",Math.sqrt(x));
+}
+
+else if (choice==='s') {
+    let h = Number(prompt("enter the hipotenuse"));
+    let side1 = Number(prompt("enter the side1"));
+    let side2 = Math.sqrt(h**2-side1**2);
+    let y = (h**2-side1**2);
+    
+    console.log("here is the solution, ");
+    console.log("side^2 = h^2-side^2 ");
+    console.log(" side^2 = ",h,("^2"), "-", side1,("^2"));
+    console.log("side^2 =", h**2 , "-", side1**2 );
+    console.log("side^2 =" ,y);
+    console.log("side =",Math.sqrt(y));
+    console.log (" hence , another side is:", side2);
+
+}
+else{
+    console.log(" please enter one of the following 'h' or 's' ")
+}
+
+    
+    </script>
+</body>
+</html>
